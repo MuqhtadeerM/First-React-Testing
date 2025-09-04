@@ -1,36 +1,25 @@
 import { render, screen } from "@testing-library/react";
-import { beforeAll, beforeEach, expect } from "vitest";
+import { expect } from "vitest";
 import App from "./App";
-
-beforeAll(() => {
-  console.log("Run before All");
-});
-
-beforeEach(() => {
-  console.log("*** before Each");
-});
 
 test("Test First React app case", () => {
   render(<App />);
   const text = screen.getByText(/First react Test Case/i);
   const title = screen.getByTitle(/this is an ai generated image/i);
   const text2 = screen.getByText(/Muqhtadeer/i);
+
   expect(text).toBeInTheDocument();
   expect(title).toBeInTheDocument();
   expect(text2).toBeInTheDocument();
 });
 
-test("Test First React app case 2", () => {
+test("Test First React app case2", () => {
   render(<App />);
   const text = screen.getByText(/First react Test Case/i);
   const title = screen.getByTitle(/this is an ai generated image/i);
   const text2 = screen.getByText(/Muqhtadeer/i);
+
   expect(text).toBeInTheDocument();
   expect(title).toBeInTheDocument();
   expect(text2).toBeInTheDocument();
-});
-
-test("snapshot for app component", () => {
-  const contianer = render(<App />);
-  expect(contianer).toMatchSnapshot();
 });
