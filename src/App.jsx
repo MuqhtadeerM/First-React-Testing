@@ -1,6 +1,7 @@
 import "./App.css";
 import OnChnage from "./components/onChangeInputTest";
 import Users from "./components/class-components/class";
+import FunctionalComponents from "./components/functional-components/functional";
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
 
       {/* Classs components */}
       <Users />
+      <FunctionalComponents />
     </div>
   );
 }
