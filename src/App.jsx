@@ -2,6 +2,9 @@ import "./App.css";
 import OnChnage from "./components/onChangeInputTest";
 import Users from "./components/class-components/class";
 import FunctionalComponents from "./components/functional-components/functional";
+import GetByRole from "./components/RTL Query/getByRole/getby";
+import GetAllRole from "./components/RTL Query/getAllEByRole/getAllby";
+import GetLabel from "./components/RTL Query/getLabel/getLabel";
 function App() {
   return (
     <div>
@@ -16,7 +19,18 @@ function App() {
 
       {/* Classs components */}
       <Users />
+
+      {/* functional components */}
       <FunctionalComponents />
+
+      {/* GetByRole usage */}
+      <GetByRole />
+
+      {/* getAllByRoles */}
+      <GetAllRole />
+
+      {/* getByLabelText */}
+      <GetLabel />
     </div>
   );
 }

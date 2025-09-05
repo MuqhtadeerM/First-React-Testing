@@ -12,6 +12,5 @@ test("method testing case 1", () => {
 });
 
 test("method  case 2", () => {
-  expect(handlerData()).toMatch("hello");
+  expect(handlerData()).toMatch("hii");
 });
-

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import handlerData from "./helper";
 
 export default function FunctionalComponents() {
   const [data, setData] = useState("");
@@ -6,8 +7,6 @@ export default function FunctionalComponents() {
     setData("Updated");
     console.log("hee");
   };
-
-
 
   return (
     <div>
