@@ -5,6 +5,8 @@ import FunctionalComponents from "./components/functional-components/functional"
 import GetByRole from "./components/RTL Query/getByRole/getby";
 import GetAllRole from "./components/RTL Query/getAllEByRole/getAllby";
 import GetLabel from "./components/RTL Query/getLabel/getLabel";
+import GetAllLabel from "./components/RTL Query/getAllLabel/getAllLabel";
+import GetPlaceHolder from "./components/RTL Query/getPlaceHolder/getPlaceHoder";
 function App() {
   return (
     <div>
@@ -18,19 +20,25 @@ function App() {
       {/* <OnChange /> */}
 
       {/* Classs components */}
-      <Users />
+      {/* <Users /> */}
 
       {/* functional components */}
-      <FunctionalComponents />
+      {/* <FunctionalComponents /> */}
 
       {/* GetByRole usage */}
-      <GetByRole />
+      {/* <GetByRole /> */}
 
       {/* getAllByRoles */}
-      <GetAllRole />
+      {/* <GetAllRole /> */}
 
       {/* getByLabelText */}
       <GetLabel />
+
+      {/* getByAllLabel */}
+      <GetAllLabel />
+
+      {/* getPl */}
+      <GetPlaceHolder />
     </div>
   );
 }
